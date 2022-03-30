@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> array: <h1 id="a1"></h1> </p>
+   <p> 1st item in the array: <h1 id="a2"></h1> </p>
+   <p> array: <h1 id="a3"></h1> </p>
+   <p> array: <h1 id="a4"></h1> </p>
+   <p> array: <h1 id="a5"></h1> </p>
+   <p> array: <h1 id="a6"></h1> </p>
+   <p> array: <h1 id="a7"></h1> </p>
+   <p> array: <h1 id="a8"></h1> </p>
+   <p> array: <h1 id="a9"></h1> </p>
+<script>
+    var games=["Roblox", "Minecraft", "Street Fighter"];
+    console.log(games);
+    document.getElementById("a1").innerHTML=games;
+    document.getElementById("a2").innerHTML=games[0];
+    games.push("Notoriety");
+    document.getElementById("a3").innerHTML=games;
+    games.pop();
+    document.getElementById("a4").innerHTML=games;
+    games.pop();
+    document.getElementById("a5").innerHTML=games;
+    games.unshift("ASTD");
+    document.getElementById("a6").innerHTML=games;
+    games.unshift("ASB");
+    document.getElementById("a7").innerHTML=games;
+    games.shift("ASB");
+    document.getElementById("a8").innerHTML=games;
+    document.getElementById("a9").innerHTML=games.sort();
+</script>
+
+</body>
+</html>
